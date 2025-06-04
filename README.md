@@ -1,31 +1,7 @@
-# Bug54 keyboard
-The Bug54 is a 54 key split keyboard featuring a 4x6 column staggered layout with 3 thumb keys.
+# HawkV0 keyboard
+The HawkV02 (Hardware revision 0, firmware revision 2) is my first keyboard design. It is a 56 key fully wireless split keyboard (4x6 + 4 thumb keys for each half), made to use nice!nano microcontrollers (or clones). 
 
-![Bug54 top and bottom side](https://github.com/ogruendel/bug54-zmk-config/blob/master/docs/images/PXL_20250518_160201433.RAW-01.COVER.jpg)
+The repository is under construction! I hope to add more documentation of the physical keyboard layout, ergogen config and PCB files in the future, but for now, what you see is what you get.
 
-## Features:
-- 54 key column staggered layout
-- Hotswap Kailh Choc V1 & V2
-- Ultra thin: **< 6mm** for the case and **< 15mm** to the top of the keys for great portability
-- Reversible PCBs for greater efficiency when ordering
-- ZMK Studio Support
-
-## Hardware
-The Bug54 is designed for NiceNano V2 and compatible microcontrollers.
-
-## Quirks / Issues / Ideas
-- Currently there is only support for SOD323 Diodes
-- My custom footprint for the hotswap case cutouts is non ideal and depending on your 3D Printer settings, the fit might be too tight / loose. For me they snap in with a bit of pressure, thus there is no need for screws
-- It might be smart to upstream the ZMK config to the ZMK repository
-
-## Images
-![Bug54 top and bottom side](https://github.com/ogruendel/bug54-zmk-config/blob/master/docs/images/PXL_20250518_160201433.RAW-01.COVER.jpg)
-![Bug54 top view](https://github.com/ogruendel/bug54-zmk-config/blob/master/docs/images/PXL_20250518_160228276.RAW-01.COVER.jpg)
-![Bug54 bottom view](https://github.com/ogruendel/bug54-zmk-config/blob/master/docs/images/PXL_20250518_160551270.RAW-01.COVER.jpg)
-![Bug54 side view](https://github.com/ogruendel/bug54-zmk-config/blob/master/docs/images/PXL_20250518_160307867.RAW-01.COVER.jpg)
-
-## V0.2 Updates
-- Added optional power switch
-- Added power switch bypass jumper
-- Added optional reset button
-- Added separate battery mount holes
+## Credit:
+This repository is a fork of the bug54 repository by ogruendel, because I want to start with a working ZMK configuration and modify it to my needs. Big thanks to ogruendel for making it all availible!
