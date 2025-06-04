@@ -1,0 +1,77 @@
+module.exports = {
+    params: {
+        pos: { type: 'net', value: 'pos' },
+        neg: { type: 'net', value: 'neg' },
+    },
+    body: p => `
+    	(footprint "JST_battery_reversible" ${p.at} (version 20240108) (generator "pcbnew") (generator_version "8.0")
+  (layer "F.Cu")
+  (property "Reference" "REF**" (at 0 -2 0)(unlocked yes)
+ (layer "F.SilkS")
+    (effects (font (size 1 1) (thickness 0.1)))
+  )
+  (property "Value" "JST_battery_reversible" (at 0 5 0)(unlocked yes)
+ (layer "F.Fab")
+    (effects (font (size 1 1) (thickness 0.15)))
+  )
+  (property "Footprint" "" (at 0 0 0)(unlocked yes)
+ (layer "F.Fab")(hide yes)
+    (effects (font (size 1 1) (thickness 0.15)))
+  )
+  (property "Datasheet" "" (at 0 0 0)(unlocked yes)
+ (layer "F.Fab")(hide yes)
+    (effects (font (size 1 1) (thickness 0.15)))
+  )
+  (property "Description" "" (at 0 0 0)(unlocked yes)
+ (layer "F.Fab")(hide yes)
+    (effects (font (size 1 1) (thickness 0.15)))
+  )
+  (attr through_hole)
+  (fp_text user "-" (at -2 1.5 0)(unlocked yes)
+ (layer "B.SilkS")
+    (effects (font (size 1 1) (thickness 0.1)))
+  )
+  (fp_text user "+" (at 0 1.5 0)(unlocked yes)
+ (layer "B.SilkS")
+    (effects (font (size 1 1) (thickness 0.1)))
+  )
+  (fp_text user "-" (at 2 1.5 0)(unlocked yes)
+ (layer "B.SilkS")
+    (effects (font (size 1 1) (thickness 0.1)))
+  )
+  (fp_text user "-" (at 0 1.5 0)(unlocked yes)
+ (layer "B.SilkS")
+    (effects (font (size 1 1) (thickness 0.1)))
+  )
+  (fp_text user "-" (at 2 1.5 0)(unlocked yes)
+ (layer "F.SilkS")
+    (effects (font (size 1 1) (thickness 0.1)))
+  )
+  (fp_text user "-" (at -2 1.5 0)(unlocked yes)
+ (layer "F.SilkS")
+    (effects (font (size 1 1) (thickness 0.1)))
+  )
+  (fp_text user "+" (at 0 1.5 0)(unlocked yes)
+ (layer "F.SilkS")
+    (effects (font (size 1 1) (thickness 0.1)))
+  )
+  (fp_text user "-" (at 0 1.5 0)(unlocked yes)
+ (layer "F.SilkS")
+    (effects (font (size 1 1) (thickness 0.1)))
+  )
+  (fp_text user "${p.ref}" (at 0 7.5 ${p.rot})(unlocked yes)
+ (layer "F.Fab") ${p.ref_hide}
+    (effects (font (size 1 1) (thickness 0.15)))
+  )
+  (pad "1" thru_hole circle (at 2 0 ${p.rot}) (size 1.524 1.524) (drill 0.7) (layers "*.Cu" "*.Mask")(remove_unused_layers no) ${p.neg.str}
+
+  )
+  (pad "2" thru_hole circle (at -2 0 ${p.rot}) (size 1.524 1.524) (drill 0.7) (layers "*.Cu" "*.Mask")(remove_unused_layers no) ${p.neg.str}
+
+  )
+  (pad "3" thru_hole roundrect (at 0 0 ${p.rot}) (size 1.524 1.524) (drill 0.7) (layers "*.Cu" "*.Mask")(remove_unused_layers no)
+ (roundrect_rratio 0.1640419948) ${p.pos.str}
+  )
+)
+`,
+};
