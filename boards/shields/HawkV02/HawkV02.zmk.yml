@@ -1,0 +1,13 @@
+file_format: "1"
+id: hawkv02
+name: HawkV02
+type: shield
+url: https://github.com/simonhawk/zmk-config-hawkv02
+requires:
+  - pro_micro
+features:
+  - keys
+  - studio
+siblings:
+  - HawkV02-left
+  - HawkV02-right

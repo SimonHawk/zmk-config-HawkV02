@@ -1,0 +1,5 @@
+config SHIELD_HAWVK02_LEFT
+    def_bool $(shields_list_contains,HawkV02_left)
+
+config SHIELD_HAWKV02_RIGHT
+    def_bool $(shields_list_contains,HawkV02_right)
